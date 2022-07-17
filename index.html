@@ -1,55 +1,81 @@
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <title>My Profile</title>
-        <link rel="icon" type="image/x-icon" href="resource/dev.png"> 
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <style>
-             footer{
-                text-align: center;
-            }  
-            #b,#c{
-                margin-left: 30px;
-            }
-            .para{
-                margin-left: 20px;
-            }
-            
-          </style>
-    </head>
+<head>
+    <title>My Profile</title>
+    <link rel="icon" type="image/x-icon" href="resource/dev.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        footer {
+            text-align: center;
+        }
 
-    <body>
-        <header>
-            <div>
-                <p  style="color: blueviolet; background-color: rgb(105, 163, 213); font-size: 18px; text-align: center;"> 
-                    <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Ajay Karande
-                    <i id="b" class="fa fa-envelope-o"aria-hidden="true"></i>&nbsp;ajaykarande3158@gmail.com
-                    <i id="c" class="fa fa-mobile" aria-hidden="true">&nbsp;</i>7709023158
-                </p>
-            </div>
-        </header>
-        <hr>
-        <hr>
-        <nav style="color:brown ; text-align: center; background-color: aquamarine; back">
-            <a  href="home.html" target="myframe" >HOME</a> 
-            <a class="para" href="techStack.html" target="myframe">TECH STACK</a>
-            <a class="para" href="education.html" target="myframe">EDUCATION</a> 
-            <a class="para" href="project.html" target="myframe">PROJECT</a> 
-            <a class="para" href="hobbies.html" target="myframe">HOBBIES</a> 
-            <a class="para" href="personalDetails.html" target="myframe">PERSONAL DETAILS</a>
-            <a class="para" href="others.html" target="myframe">OTHERS</a>
-        </nav>
-        <hr>
-        <div>
-            <iframe width="1300px" height="400px" name="myframe" src="home.html" style="Border: none"> </iframe>
+        #b,
+        #c {
+            margin-left: 30px;
+        }
+
+        .para {
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex; 
+         justify-content: center;
+        }
+
+        p {
+         
+            padding: 5px;
+            font-size: 20px;
+            background-color: rgb(184, 180, 171);
+            color: blueviolet;
+        }
+        .navigate {
+            /* display: flex; justify-content: center;
+             background-color:aqua; */ text-align: center;
+             }
+             span {padding: 5px;
+            font-size: 20px;
+            background-color: blanchedalmond;
+            color: cadetblue;
+
+             }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p>
+                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Ajay Karande
+                <i id="b" class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;ajaykarande3158@gmail.com
+                <i id="c" class="fa fa-mobile" aria-hidden="true">&nbsp;</i>7709023158
+            </p>
         </div>
-        <footer >
-<strong>Follow Me</strong> &nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-<a href="https://www.linkedin.com/feed/" ><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-        </footer>
-    </body>
+    </header>
 
-    </html>
+
+     <nav class="navigate">
+        <a href="home.html" target="myframe"><span>HOME</span></a>
+        <a class="para" href="techStack.html" target="myframe"><span>TECH STACK</span></a>
+        <a class="para" href="education.html" target="myframe"><span>EDUCATION</span></a>
+        <a class="para" href="project.html" target="myframe"><span>PROJECT</span></a>
+        <a class="para" href="hobbies.html" target="myframe"><span>HOBBIES</span></a>
+        <a class="para" href="personalDetails.html" target="myframe"><span>PERSONAL DETAILS</span></a>
+        <a class="para" href="others.html" target="myframe"><span>OTHERS</span></a>
+    
+    </nav>
+
+    <div>
+        <iframe width="1300px" height="500px" name="myframe" src="home.html" style="Border: none"> </iframe>
+    </div>
+    <footer>
+        <strong>Follow Me</strong> &nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><i
+                class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </footer>
+</body>
+
+</html>

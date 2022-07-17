@@ -4,17 +4,32 @@
 <head>
     <title>Education Details</title>
     <style>
-        table,
         th,
+        table,
         td {
             border: 1px solid black;
-            border-collapse: collapse;
+            background-color: antiquewhite;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }  
+        th, 
+        td {
+            padding: 08px;
+        } 
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        th,
-        td {
-            padding: 10px;
-
+        h3 {
+            display: block;
+            padding: 5px;
+            font-size: 20px;
+            background-color: bisque;
+            color: brown;
         }
     </style>
 
@@ -22,8 +37,11 @@
 
 <body>
 
-    <h3>EDUCATION DETALIS</h3>
-    <table>
+    <div class="container">
+        <h3>EDUCATION DETAILS</h3>
+    </div>
+
+    <table class="center" style="width: 700px; text-align: center; ">
         <tr>
             <th>Qualification</th>
             <th>School/College</th>
@@ -53,6 +71,7 @@
             <td>90%</td>
         </tr>
     </table>
+
 
 
 </body>
